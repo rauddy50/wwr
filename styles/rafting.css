@@ -6,7 +6,6 @@
 }
 body {
   background-color: var(--accent01-color);
-  /* width: 100%;*/
   height: auto;
   align-content: center;
   justify-content: center;
@@ -22,7 +21,6 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   
-
 }
 .navegation {
   display: flex;
@@ -59,21 +57,15 @@ body {
   width: 120px;
   border-radius: 10px;
 }
-h1,
-h2 {
+
+h1,h2 {
   font-family: georgia, sans-serif;
   color: var(--primary-color);
   text-align: center;
-  padding: 0px;
+  padding: 0;
   margin-right: 60px;
 }
 
-div h1 {
-  font-family: georgia, sans-serif;
-  color: var(--primary-color);
-  position: absolute;
-  text-align: center;
-}
 p {
   font-family: roboto, sans-serif;
   color: var(--secundary-color);
@@ -140,7 +132,7 @@ a {
   margin: 0;
   line-height: 1.6;
   color: var(--secundary-color);
-  font-size: 1.1rem;
+  font-size: .1rem;
 }
 
 figcaption {
@@ -232,5 +224,46 @@ section p {
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
+  text-align: center;
+}
+.company-info{
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3rem;
+  padding-left: 6rem;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  }
+.map{
+    
+    align-items: center;
+
+   }
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.employee-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  align-items: center;
+}
+.emily-image,.jake-image,.sara-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  justify-content: center;
+  
+}
+.contact-main{
+  justify-content: center;
+}
+.body-contactus{
+  justify-content: center;
   text-align: center;
 }
