@@ -12,7 +12,7 @@ body {
 }
 
 .grid-container {
-  justify-content: space-between;
+  justify-content: center;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 4.76fr 1fr 1fr;
@@ -24,21 +24,24 @@ body {
 .navegation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex: 1;
   text-decoration: none;
   list-style-type: none;
+  padding:10px;
 }
 .navegation a {
   background-color: rgb(230, 226, 226);
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 45px;
   padding-right: 40px;
   color: black;
   font-family: Roboto;
   font-size: 14px;
   line-height: 10px;
   border: 1px solid black;
+  text-align: center;
+  
 }
 .first {
   border-top-left-radius: 5px;
@@ -54,6 +57,7 @@ body {
   height: 120px;
   width: 120px;
   border-radius: 10px;
+  
 }
 
 h1,
