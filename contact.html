@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact information of the company">
-    <meta name="author" content="rauddy Lopez | whitewater rafting">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact information of the company" />
+    <meta name="author" content="rauddy Lopez | whitewater rafting" />
     <title>Whitewater Rafting Contact us</title>
     <link rel="stylesheet" href="styles/rafting.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,73 +32,96 @@
         <img
           class="background-hero-image"
           src="images/background-hero-image.jpg"
-          alt="background-hero-image"/>
+          alt="background-hero-image"
+        />
+
+        <section class="company-info">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> 123 River Rd, Whitewater, CO</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> info@raftingco.com</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2143.4980589139313!2d-70.66375307852141!3d19.096543672079182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sdo!4v1743729501368!5m2!1ses!2sdo"
+              width="600"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </section>
+      </div>
+
+      <section class="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee-list">
+          <figure>
+            <img class="img-team" src="images/Emily.jpg" alt="Emily - Guide" />
+            <figcaption>Emily - Head Guide</figcaption>
+          </figure>
+          <figure class="jake">
+            <img
+              class="img-team"
+              src="images/Jake.jpg"
+              alt="Jake - Safety Officer"
+            />
+            <figcaption>Jake - Safety Officer</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="img-team"
+              src="images/Sara.jpg"
+              alt="Sara - Reservations"
+            />
+            <figcaption>Sara - Reservations Specialist</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post" class="form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
           </div>
 
-          <section class="company-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 River Rd, Whitewater, CO</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
-            <p><strong>Email:</strong> info@raftingco.com</p>
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2143.4980589139313!2d-70.66375307852141!3d19.096543672079182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sdo!4v1743729501368!5m2!1ses!2sdo"
-                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </section>
-      
-          <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee-list">
-              <figure>
-                <img class="emily-image" src="images/Emily.jpg" alt="Emily - Guide" />
-                <figcaption>Emily - Head Guide</figcaption>
-              </figure>
-              <figure>
-                <img class="jake-image"  src="images/Jake.jpg" alt="Jake - Safety Officer" />
-                <figcaption>Jake - Safety Officer</figcaption>
-              </figure>
-              <figure>
-                <img class="sara-image"  src="images/Sara.jpg" alt="Sara - Reservations" />
-                <figcaption>Sara - Reservations Specialist</figcaption>
-              </figure>
-            </div>
-          </section>
-      
-          <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-              <div>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-              </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-              <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-              </div>
-      
-              <fieldset>
-                <legend>Purpose of your message:</legend>
-                <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
-                <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
-                <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
-              </fieldset>
-      
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-      
-              <label>
-                <input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter
-              </label>
-      
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-          </section>
+          <fieldset class="fieldset">
+            <legend>Purpose of your message:</legend>
+            <label
+              ><input type="radio" name="purpose" value="general" required />
+              General Inquiry</label
+            ><br />
+            <label
+              ><input type="radio" name="purpose" value="reservation" />
+              Reservation Question</label
+            ><br />
+            <label
+              ><input type="radio" name="purpose" value="suggestion" /> Website
+              Suggestion</label
+            >
+          </fieldset>
+          <div class="CTA">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            
-       
+            <label>
+              <input type="checkbox" name="subscribe" /> Please subscribe me to
+              the monthly newsletter
+            </label>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="footer-conteiner"></div>

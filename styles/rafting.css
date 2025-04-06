@@ -20,16 +20,14 @@ body {
   padding-right: 20%;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
 .navegation {
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   flex: 1;
   text-decoration: none;
   list-style-type: none;
-  
 }
 .navegation a {
   background-color: rgb(230, 226, 226);
@@ -58,7 +56,8 @@ body {
   border-radius: 10px;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: georgia, sans-serif;
   color: var(--primary-color);
   text-align: center;
@@ -132,7 +131,7 @@ a {
   margin: 0;
   line-height: 1.6;
   color: var(--secundary-color);
-  font-size: .1rem;
+  font-size: 0.1rem;
 }
 
 figcaption {
@@ -226,44 +225,65 @@ section p {
   margin: 0 auto;
   text-align: center;
 }
-.company-info{
+.company-info {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 3rem;
   padding-left: 6rem;
   max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(32, 26, 26, 0.1);
   justify-content: center;
-  }
-.map{
-    
-    align-items: center;
-
-   }
-.contact-form{
+}
+.map {
+  align-items: center;
+  margin: auto;
+}
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.454);
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  font-family: Roboto;
 }
 .employee-list {
   display: flex;
-  gap: 1rem;
-  justify-content: space-around;
-  margin-bottom: 2rem;
+
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  padding-left: 30px;
 }
-.emily-image,.jake-image,.sara-image {
+.jake {
+  margin-left: 80px;
+}
+.img-team {
   height: 120px;
   width: 120px;
   border-radius: 10px;
-  justify-content: center;
-  
 }
-.contact-main{
+.contact-main {
   justify-content: center;
 }
-.body-contactus{
+.body-contactus {
   justify-content: center;
   text-align: center;
+}
+.form {
+  margin-bottom: 1rem;
+}
+.fieldset {
+  border: 1px solid var(--secundary-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.CTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-direction: column;
 }
