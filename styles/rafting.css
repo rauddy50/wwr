@@ -394,7 +394,10 @@ text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
   padding-top: 80px;
 
 }
-.trip-btn{
+.trip-button{
+  position: absolute;
+ }
+ .trip-button a{
   border: 1px solid black;
   text-decoration: none;
   list-style-type: none;
@@ -407,5 +410,5 @@ text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-
-}
+  
+ }
